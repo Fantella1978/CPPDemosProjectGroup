@@ -63,6 +63,33 @@
         <Projects Include="Windows10NavigationPane\NavigationPaneCpp.cbproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ActivityIndicator\ActivityIndicator.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ImageProc\ImageProcessing.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RelativePanel\RelativePanel.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCLSensorsCpp\VCLSensorsCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SplitView\SplitView.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="StackPanel\StackPanel.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SharingContract_FrameWork\SharingContractFramework.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SharingContract_Component\SharingContractComponent.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HttpDownload\HttpDownloadDemo.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -251,14 +278,95 @@
     <Target Name="NavigationPaneCpp:Make">
         <MSBuild Projects="Windows10NavigationPane\NavigationPaneCpp.cbproj" Targets="Make"/>
     </Target>
+    <Target Name="ActivityIndicator">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.cbproj"/>
+    </Target>
+    <Target Name="ActivityIndicator:Clean">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActivityIndicator:Make">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageProcessing">
+        <MSBuild Projects="ImageProc\ImageProcessing.cbproj"/>
+    </Target>
+    <Target Name="ImageProcessing:Clean">
+        <MSBuild Projects="ImageProc\ImageProcessing.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageProcessing:Make">
+        <MSBuild Projects="ImageProc\ImageProcessing.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelativePanel">
+        <MSBuild Projects="RelativePanel\RelativePanel.cbproj"/>
+    </Target>
+    <Target Name="RelativePanel:Clean">
+        <MSBuild Projects="RelativePanel\RelativePanel.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelativePanel:Make">
+        <MSBuild Projects="RelativePanel\RelativePanel.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCLSensorsCpp">
+        <MSBuild Projects="VCLSensorsCpp\VCLSensorsCpp.cbproj"/>
+    </Target>
+    <Target Name="VCLSensorsCpp:Clean">
+        <MSBuild Projects="VCLSensorsCpp\VCLSensorsCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLSensorsCpp:Make">
+        <MSBuild Projects="VCLSensorsCpp\VCLSensorsCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SplitView">
+        <MSBuild Projects="SplitView\SplitView.cbproj"/>
+    </Target>
+    <Target Name="SplitView:Clean">
+        <MSBuild Projects="SplitView\SplitView.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SplitView:Make">
+        <MSBuild Projects="SplitView\SplitView.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="StackPanel">
+        <MSBuild Projects="StackPanel\StackPanel.cbproj"/>
+    </Target>
+    <Target Name="StackPanel:Clean">
+        <MSBuild Projects="StackPanel\StackPanel.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StackPanel:Make">
+        <MSBuild Projects="StackPanel\StackPanel.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SharingContractFramework">
+        <MSBuild Projects="SharingContract_FrameWork\SharingContractFramework.cbproj"/>
+    </Target>
+    <Target Name="SharingContractFramework:Clean">
+        <MSBuild Projects="SharingContract_FrameWork\SharingContractFramework.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SharingContractFramework:Make">
+        <MSBuild Projects="SharingContract_FrameWork\SharingContractFramework.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SharingContractComponent">
+        <MSBuild Projects="SharingContract_Component\SharingContractComponent.cbproj"/>
+    </Target>
+    <Target Name="SharingContractComponent:Clean">
+        <MSBuild Projects="SharingContract_Component\SharingContractComponent.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SharingContractComponent:Make">
+        <MSBuild Projects="SharingContract_Component\SharingContractComponent.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="HttpDownloadDemo">
+        <MSBuild Projects="HttpDownload\HttpDownloadDemo.cbproj"/>
+    </Target>
+    <Target Name="HttpDownloadDemo:Clean">
+        <MSBuild Projects="HttpDownload\HttpDownloadDemo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HttpDownloadDemo:Make">
+        <MSBuild Projects="HttpDownload\HttpDownloadDemo.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="GridDemo;Forms;EdgeBrowser;CardPanel;ControlsDemo;CppConstExpr;CppConstExprIf;CppGenericLambdas;CppIfInit;CppInitializingLambdaCaptures;CppReturnTypeDeduction;CppStringView;CppStructuredBindings;DragAndDropCpp;CPPOneFormApp;SearchBox;Skia4DelphiCpp_VCL;CPPVideoPlayer;Windows10CRMDemo;NavigationPaneCpp"/>
+        <CallTarget Targets="GridDemo;Forms;EdgeBrowser;CardPanel;ControlsDemo;CppConstExpr;CppConstExprIf;CppGenericLambdas;CppIfInit;CppInitializingLambdaCaptures;CppReturnTypeDeduction;CppStringView;CppStructuredBindings;DragAndDropCpp;CPPOneFormApp;SearchBox;Skia4DelphiCpp_VCL;CPPVideoPlayer;Windows10CRMDemo;NavigationPaneCpp;ActivityIndicator;ImageProcessing;RelativePanel;VCLSensorsCpp;SplitView;StackPanel;SharingContractFramework;SharingContractComponent;HttpDownloadDemo"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GridDemo:Clean;Forms:Clean;EdgeBrowser:Clean;CardPanel:Clean;ControlsDemo:Clean;CppConstExpr:Clean;CppConstExprIf:Clean;CppGenericLambdas:Clean;CppIfInit:Clean;CppInitializingLambdaCaptures:Clean;CppReturnTypeDeduction:Clean;CppStringView:Clean;CppStructuredBindings:Clean;DragAndDropCpp:Clean;CPPOneFormApp:Clean;SearchBox:Clean;Skia4DelphiCpp_VCL:Clean;CPPVideoPlayer:Clean;Windows10CRMDemo:Clean;NavigationPaneCpp:Clean"/>
+        <CallTarget Targets="GridDemo:Clean;Forms:Clean;EdgeBrowser:Clean;CardPanel:Clean;ControlsDemo:Clean;CppConstExpr:Clean;CppConstExprIf:Clean;CppGenericLambdas:Clean;CppIfInit:Clean;CppInitializingLambdaCaptures:Clean;CppReturnTypeDeduction:Clean;CppStringView:Clean;CppStructuredBindings:Clean;DragAndDropCpp:Clean;CPPOneFormApp:Clean;SearchBox:Clean;Skia4DelphiCpp_VCL:Clean;CPPVideoPlayer:Clean;Windows10CRMDemo:Clean;NavigationPaneCpp:Clean;ActivityIndicator:Clean;ImageProcessing:Clean;RelativePanel:Clean;VCLSensorsCpp:Clean;SplitView:Clean;StackPanel:Clean;SharingContractFramework:Clean;SharingContractComponent:Clean;HttpDownloadDemo:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GridDemo:Make;Forms:Make;EdgeBrowser:Make;CardPanel:Make;ControlsDemo:Make;CppConstExpr:Make;CppConstExprIf:Make;CppGenericLambdas:Make;CppIfInit:Make;CppInitializingLambdaCaptures:Make;CppReturnTypeDeduction:Make;CppStringView:Make;CppStructuredBindings:Make;DragAndDropCpp:Make;CPPOneFormApp:Make;SearchBox:Make;Skia4DelphiCpp_VCL:Make;CPPVideoPlayer:Make;Windows10CRMDemo:Make;NavigationPaneCpp:Make"/>
+        <CallTarget Targets="GridDemo:Make;Forms:Make;EdgeBrowser:Make;CardPanel:Make;ControlsDemo:Make;CppConstExpr:Make;CppConstExprIf:Make;CppGenericLambdas:Make;CppIfInit:Make;CppInitializingLambdaCaptures:Make;CppReturnTypeDeduction:Make;CppStringView:Make;CppStructuredBindings:Make;DragAndDropCpp:Make;CPPOneFormApp:Make;SearchBox:Make;Skia4DelphiCpp_VCL:Make;CPPVideoPlayer:Make;Windows10CRMDemo:Make;NavigationPaneCpp:Make;ActivityIndicator:Make;ImageProcessing:Make;RelativePanel:Make;VCLSensorsCpp:Make;SplitView:Make;StackPanel:Make;SharingContractFramework:Make;SharingContractComponent:Make;HttpDownloadDemo:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
